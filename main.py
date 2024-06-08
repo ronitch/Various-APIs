@@ -42,7 +42,7 @@ with open("newdelhi_lockey.json", "r") as file:
 forecast_url = f"http://dataservice.accuweather.com/forecasts/v1/daily/1day/{delhi_locationKey}"
 
 params_forecast = {
-    "apikey": "rRsg97I7deRsueayAlAGQcc8KW4221O1",
+    "apikey": "",
     "language": "en-in"
 }
 
