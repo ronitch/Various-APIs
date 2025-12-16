@@ -9,7 +9,7 @@ repos:
 
       - id: pyright
         name: pyright
-        entry: pyright
+        entry: cmd /c "pyright --verifytypes"
         language: system
         types: [python]
         args: ["--verifytypes"]

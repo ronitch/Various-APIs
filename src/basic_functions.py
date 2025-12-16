@@ -1,4 +1,4 @@
-def add(a:float, b):
+def add(a, b):
     """
     Return the sum of two numbers.
 
