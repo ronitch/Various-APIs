@@ -3,23 +3,28 @@ repos:
     hooks:
       - id: ruff
         name: ruff
-        entry: ruff check
+        entry: ruff check --fix
         language: system
         types: [python]
+
       - id: pyright
         name: pyright
         entry: pyright
         language: system
         types: [python]
+
       - id: end-of-file-fixer
         name: end-of-file-fixer
         entry: end-of-file-fixer
         language: system
+        types: [text]
+
       - id: check-yaml
         name: check-yaml
         entry: check-yaml
         language: system
-        files: \.(yaml|yml)$
+        files: \.(ya?ml)$
+
       - id: check-added-large-files
         name: check-added-large-files
         entry: check-added-large-files

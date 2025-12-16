@@ -10,3 +10,12 @@ dependencies = [
     "pytest>=8.3.5",
     "ruff>=0.14.9",
 ]
+
+[tool.pyright]
+# Enable strict type checking for all files
+typeCheckingMode = "strict"
+include = ["src", "tests"]
+exclude = [
+    "./__pycache__",
+    ".venv",
+]
