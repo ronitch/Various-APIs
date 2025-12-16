@@ -6,6 +6,7 @@ repos:
         entry: ruff check --fix
         language: system
         types: [python]
+        require_serial: true
 
       - id: pyright
         name: pyright
@@ -13,12 +14,14 @@ repos:
         language: system
         types: [python]
         args: ["--verifytypes"]
+        require_serial: true
 
       - id: end-of-file-fixer
         name: end-of-file-fixer
         entry: end-of-file-fixer
         language: system
         types: [text]
+        require_serial: true
 
       - id: check-yaml
         name: check-yaml
