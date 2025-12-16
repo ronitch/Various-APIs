@@ -12,7 +12,7 @@ repos:
       # Pyright type checker
       - id: pyright
         name: pyright
-        entry: pyright --verifytypes
+        entry: pyright
         language: system
         types: [python]
         pass_filenames: true
