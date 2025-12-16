@@ -9,7 +9,7 @@ country_code = {
 
 q = country_code["India"]
 
-url_lockey = f"http://dataservice.accuweather.com/locations/v1/cities/search"
+url_lockey = "http://dataservice.accuweather.com/locations/v1/cities/search"
 
 params_locationkey = {
     "apikey" : "", # Put your API Key from Accuweather here
@@ -57,5 +57,3 @@ if response_forecast.status_code == 200:
 
 else:
     print("Retrieval of forecast failed with Status Code: ", response_forecast.status_code)
-
-
