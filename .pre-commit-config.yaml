@@ -12,6 +12,7 @@ repos:
         entry: pyright
         language: system
         types: [python]
+        args: ["--verifytypes"]
 
       - id: end-of-file-fixer
         name: end-of-file-fixer
