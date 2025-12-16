@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      # Ruff linter / auto-fixer
+      - id: ruff
+        name: ruff
+        entry: ruff check --fix
+        language: system
+        types: [python]
+        pass_filenames: true
+
+      # Pyright type checker
+      - id: pyright
+        name: pyright
+        entry: pyright --verifytypes
+        language: system
+        types: [python]
+        pass_filenames: true
