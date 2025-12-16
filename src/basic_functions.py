@@ -1,4 +1,4 @@
-def add(a, b):
+def add(a:str, b):
     """
     Return the sum of two numbers.
 
@@ -14,7 +14,7 @@ def add(a, b):
     float
         The sum of `a` and `b`.
     """
-    return a + b
+    return a + b 
 
 
 def subtract(a: float, b: float) -> float:
